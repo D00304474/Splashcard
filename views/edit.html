@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app>
+	<script src="../controllers/cardCtrl.js"></script>
+	<link rel="stylesheet" type="text/css" href='../public/stylesheets/edit.css'>
+	<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+<head>
+<title> Editor </title>
+</head>
+
+<body ng-app="ngAnimate">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+	<div class="edit_window">
+		<p>Category:	<input ng-model="category"></p>
+		<p>Question:	<input ng-model="question"></p>
+		<p>Answer:	<input ng-model="answer" ></p>
+		<button>Save</button> 
+	</div>
+<button class="btn-small" type="submit" ng-click="myFont='helv_neu'">Helvetica Neue</button>
+<button class="btn-small" type="submit" ng-click="myFont='herculanum'">Herculanum</button>
+<button class="btn-small" type="submit" ng-click="myFont='myanmar'">Myanmar Sangam MN</button>
+<p>
+<button class="btn-small" type="submit" ng-click="myFont='orbitron'">Orbitron</button>
+<button class="btn-small" type="submit" ng-click="myFont='baumans'">Baumans</button>
+<button class="btn-small" type="submit" ng-click="myFont='frijole'">Frijole</button>
+<button class="btn-small" type="submit" ng-click="myFont=''">Normal</button>
+</p>
+
+	<div class="preview">
+	<p><h2 ng-class="myFont">{{category}}</h2></p>
+	<p ng-class="myFont">{{question}}</p>
+	<p ng-class="myFont">{{answer}}</p>
+	</div> 
+
+</body>
+</html>

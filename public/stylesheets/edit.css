@@ -1,0 +1,30 @@
+.helv_neu {
+	font-family: "Helvetica Neue"
+}
+.myanmar {
+	font-family: "Myanmar Sangam MN";
+}
+.herculanum {
+	font-family: "Herculanum";
+}
+.orbitron {
+	font-family: 'Orbitron', sans-serif;
+}
+.frijole {
+	font-family: 'Frijole', cursive;
+}
+.baumans{
+	font-family: 'Baumans', cursive;
+}
+.preview {
+	width: 300px;
+	height: 300px;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	text-align: center;
+	margin-left:500px;
+	word-wrap: break-word;
+	overflow:hidden;
+
+}

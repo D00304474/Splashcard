@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+
+<script src="../controllers/cardCtrl.js"></script>
+<link rel="stylesheet" type="text/css" href='../public/stylesheets/viewer.css'>
+<head>
+<link rel="stylesheet" href="../public/stylesheets/animate.min.css">
+<title>Splashcard</title>
+</head>
+
+<body ng-controller="CardController">
+
+
+<ul>
+	<li ng-repeat="card in cards">
+
+	<div class="card" ng-click="clicked=true" >	
+		<p ng-hide="clicked">{{card.category}}</p>
+		<p ng-hide="clicked">{{card.question}}</p>
+		<p ng-show="clicked">{{card.answer}} </p>
+	</div>
+
+	</li>
+</ul>
+
+
+</body>
+</html>
