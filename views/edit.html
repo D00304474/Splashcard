@@ -2,9 +2,8 @@
 <html ng-app>
 	<script src="../controllers/cardCtrl.js"></script>
 	<link rel="stylesheet" type="text/css" href='../public/stylesheets/edit.css'>
-	<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href='../public/stylesheets/fonts.css'>
+	<link href='http://fonts.googleapis.com/css?family=Viga|Fredericka+the+Great|Shadows+Into+Light|Libre+Baskerville|Black+Ops+One|Audiowide|Advent+Pro|Aldrich|Indie+Flower|Walter+Turncoat|Baumans|Orbitron|Frijole' rel='stylesheet' type='text/css'>
 <head>
 <title> Editor </title>
 </head>
@@ -18,20 +17,30 @@
 		<p>Answer:	<input ng-model="answer" ></p>
 		<button>Save</button> 
 	</div>
+<div class="font_window">
 <button class="btn-small" type="submit" ng-click="myFont='helv_neu'">Helvetica Neue</button>
 <button class="btn-small" type="submit" ng-click="myFont='herculanum'">Herculanum</button>
 <button class="btn-small" type="submit" ng-click="myFont='myanmar'">Myanmar Sangam MN</button>
-<p>
 <button class="btn-small" type="submit" ng-click="myFont='orbitron'">Orbitron</button>
 <button class="btn-small" type="submit" ng-click="myFont='baumans'">Baumans</button>
 <button class="btn-small" type="submit" ng-click="myFont='frijole'">Frijole</button>
+<button class="btn-small" type="submit" ng-click="myFont='turncoat'">Walter Turncoat</button>
+<button class="btn-small" type="submit" ng-click="myFont='viga'">Viga</button>
+<button class="btn-small" type="submit" ng-click="myFont='fredericka'">Fredericka the Great</button>
+<button class="btn-small" type="submit" ng-click="myFont='shadows'">Shadows Into Light</button>
+<button class="btn-small" type="submit" ng-click="myFont='libre'">Libre Baskerville</button>
+<button class="btn-small" type="submit" ng-click="myFont='black_ops'">Black Ops One</button>
+<button class="btn-small" type="submit" ng-click="myFont='audiowide'">Audiowide</button>
+<button class="btn-small" type="submit" ng-click="myFont='advent_pro'">Advent Pro</button>
+<button class="btn-small" type="submit" ng-click="myFont='aldrich'">Aldrich</button>
+<button class="btn-small" type="submit" ng-click="myFont='indie'">Indie Flower</button>
 <button class="btn-small" type="submit" ng-click="myFont=''">Normal</button>
-</p>
+</div>
 
 	<div class="preview">
 	<p><h2 ng-class="myFont">{{category}}</h2></p>
-	<p ng-class="myFont">{{question}}</p>
-	<p ng-class="myFont">{{answer}}</p>
+	<p class="question" ng-class="myFont">{{question}}</p>
+	<p class="answer" ng-class="myFont">{{answer}}</p>
 	</div> 
 
 </body>
